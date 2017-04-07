@@ -1,0 +1,31 @@
+.audio-player{
+  display: none;
+}
+.cover-art {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+#left-eye,#right-eye{
+   border-radius: 50%;
+   display: block;
+   position: absolute;
+   width: 45px; height: 58px;
+   top: 145px;
+ }
+ #left-eye{
+   left: 242px;
+ }
+ #right-eye{
+   left: 654px;
+ }
+
+ #left-pupil,#right-pupil{
+   width: 8px; height: 36px;
+   background: #FFF;
+   border-radius: 50%;
+   display: block;
+   position: absolute;
+ }
+}
