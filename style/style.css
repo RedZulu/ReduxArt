@@ -28,4 +28,81 @@
    display: block;
    position: absolute;
  }
+
+
+.pink-background{
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  position: absolute;
+  /*background-repeat: repeat-y;*/
+  background-image: url("../assets/pink_background.png");
+  -webkit-animation:100s scroll infinite linear;
+   -moz-animation:100s scroll infinite linear;
+   -o-animation:100s scroll infinite linear;
+   -ms-animation:100s scroll infinite linear;
+   animation:100s scroll infinite linear;
+}
+
+.special{
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 3;
+}
+
+.cat1{
+  left: 0;
+  top: 0;
+  position: absolute;
+  z-index: 2;
+}
+
+.cat2{
+  right: 0;
+  top: 0;
+  position: absolute;
+  z-index: 2;
+}
+
+.app-view{
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  position: absolute;
+}
+
+@-webkit-keyframes scroll{
+  100%{
+    background-position:0px -3000px;
+  }
+}
+
+@-moz-keyframes scroll{
+  100%{
+    background-position:0px -3000px;
+  }
+}
+
+@-o-keyframes scroll{
+  100%{
+    background-position:0px -3000px;
+  }
+}
+
+@-ms-keyframes scroll{
+  100%{
+    background-position:0px -3000px;
+  }
+}
+
+@keyframes scroll{
+  100%{
+    background-position:0px -3000px;
+  }
 }

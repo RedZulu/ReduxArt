@@ -23,7 +23,7 @@ export default class Cover extends Component {
           if (mouseX < 0) mouseX = 0;
           if (mouseY < 0) mouseY = 0;
         });
-
+        
         let follower = $(eyepupil);
         let loop = setInterval(function(){
           xp += (mouseX - xp) / speed;
