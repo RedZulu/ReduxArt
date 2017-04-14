@@ -11,14 +11,16 @@ export default class SpecialCats extends Component {
     componentDidMount(){
       let specialHeight = $('.special').height();
       let windowHeight = $(window).height();
-      let totalHeight = ((windowHeight - specialHeight)-70).toString() + 'px';
+      let specialPercent = $('.special').height()*.4;
+      let totalHeight = ((windowHeight - specialHeight)+specialPercent).toString() + 'px';
 
       $('.cat1').css({'height': totalHeight});
       $('.cat2').css({'height': totalHeight});
       $(window).on('resize', function(){
         specialHeight = $('.special').height();
         windowHeight = $(window).height();
-        totalHeight = ((windowHeight - specialHeight)+45).toString() + 'px';
+        specialPercent = $('.special').height()*.4;
+        totalHeight = ((windowHeight - specialHeight)+specialPercent).toString() + 'px';
         $('.cat1').css({'height': totalHeight});
         $('.cat2').css({'height': totalHeight});
       })
@@ -26,10 +28,12 @@ export default class SpecialCats extends Component {
 
     render() {
         return (
-          <div>
-            <img className="special" src="../../assets/special.png" />
-            <img className="cat1" src="../../assets/cat1.png" />
-            <img className="cat2" src="../../assets/cat2.png" />
+          <div className="cat-special">
+            <div className="cats">
+              <img className="cat1" src="../../assets/cat1.png" />
+              <img className="cat2" src="../../assets/cat2.png" />
+              <img className="special" src="../../assets/special.png" />
+            </div>
           </div>
         );
     }

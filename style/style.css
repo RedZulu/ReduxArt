@@ -55,17 +55,17 @@
 }
 
 .cat1{
-  left: 0;
-  top: 0;
   position: absolute;
+  left: 0;
   z-index: 2;
+  top: 0;
 }
 
 .cat2{
-  right: 0;
-  top: 0;
   position: absolute;
+  right: 0;
   z-index: 2;
+  top: 0;
 }
 
 .app-view{
