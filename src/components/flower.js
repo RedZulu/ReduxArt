@@ -14,15 +14,6 @@ export default class Flowers extends Component {
       let $flower2 = $('.flower2');
       let $flowers = $('.flowers');
 
-      function rotate(x){
-        let tl = new TimelineMax();
-        tl.to(x,  1000000, {rotation:3600000, repeat:-1})
-        tl.play();
-      }
-
-      rotate($flower1);
-      rotate($flower2);
-
       let $flHeight = '-'+($flower1.height()/2).toString()+'px';
       $flower1.css({'bottom': $flHeight});
       $flower2.css({'bottom': $flHeight});

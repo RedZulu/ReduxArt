@@ -27,6 +27,33 @@
    animation:100s scroll infinite linear;
 }
 
+.eyes{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  height: 180px;
+  position: absolute;
+  top: 163px;
+}
+
+.crt-flashes-eye1{
+  height: 180px;
+}
+
+.crt-flashes-eye2{
+  height: 180px;
+  display: none;
+}
+
+.crt-rainbows-eye1{
+  height: 180px;
+  display: none;
+}
+
+.crt-rainbows-eye2{
+  height: 180px;
+}
+
 .special{
   width: 100%;
   position: absolute;
