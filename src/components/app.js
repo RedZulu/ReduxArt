@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import Audio from './audio';
-import Cover from './cover';
 import Background from './background';
 import SpecialCats from './special';
+import Flowers from './flower';
+import BandText from './bandText'
 
 export default class App extends Component {
 
@@ -10,8 +11,10 @@ export default class App extends Component {
     return (
       <div className="app-view">
         <Background />
+        <BandText />
         <SpecialCats />
         <Audio />
+        <Flowers />
       </div>
     );
   }

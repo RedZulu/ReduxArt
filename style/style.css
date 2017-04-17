@@ -1,34 +1,15 @@
+.app-view{
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  position: absolute;
+}
+
 .audio-player{
   display: none;
 }
-.cover-art {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-}
-#left-eye,#right-eye{
-   border-radius: 50%;
-   display: block;
-   position: absolute;
-   width: 45px; height: 58px;
-   top: 145px;
- }
- #left-eye{
-   left: 242px;
- }
- #right-eye{
-   left: 654px;
- }
-
- #left-pupil,#right-pupil{
-   width: 8px; height: 36px;
-   background: #FFF;
-   border-radius: 50%;
-   display: block;
-   position: absolute;
- }
-
 
 .pink-background{
   width: 100%;
@@ -68,14 +49,48 @@
   top: 0;
 }
 
-.app-view{
+.flowers{
+  width: 100%;
+  display: flex;
+  -ms-align-items: flex-end;
+  align-items: flex-end;
+  z-index: 5;
+  position: absolute;
+  bottom: 0;
+}
+
+.flower1{
+  left: 6%;
+  z-index: 10;
+  width: 100%;
+}
+
+.flower2{
+  right: 3%;
+  z-index: 10;
+  width: 100%;
+}
+
+.bandTextDiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 6;
+  position: absolute;
   width: 100%;
   height: 100%;
-  left: 0;
+}
+
+.bandText1{
+  position: absolute;
   top: 0;
-  overflow: hidden;
+}
+
+.bandText2{
   position: absolute;
 }
+
 
 @-webkit-keyframes scroll{
   100%{
