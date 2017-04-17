@@ -16,7 +16,6 @@ export default class Audio extends Component {
       e.preventDefault();
       if (this.state.isToggleOn) {
         $('.audio-player').trigger('play');
-        TweenMax.to($('.cover-art'), 2, { width:"50%", ease:Linear.easeNone});
       }else{
         $('.audio-player').trigger('pause');
       }

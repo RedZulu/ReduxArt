@@ -14,22 +14,26 @@ export default class App extends Component {
     $(document).keyup(function(evt) {
       if (evt.keyCode == 32) {
        space = false;
-       rotate($flower1,1000000,3600000);
-       rotate($flower2,1000000,3600000);
+       rotate($flower1,500000,3600000);
+       rotate($flower2,500000,3600000);
        $('.crt-flashes-eye1').show();
        $('.crt-rainbows-eye1').hide();
        $('.crt-flashes-eye2').hide();
        $('.crt-rainbows-eye2').show();
+       $('.audio-player').trigger('pause');
+       $( ".pink-background-active" ).removeClass( "pink-background-active" ).addClass( "pink-background" );
       }
     }).keydown(function(evt) {
      if (evt.keyCode == 32) {
        space = true;
+       $('.audio-player').trigger('play');
        rotate($flower1,40000,3600000);
        rotate($flower2,40000,3600000);
        $('.crt-flashes-eye1').hide();
        $('.crt-rainbows-eye1').show();
        $('.crt-flashes-eye2').show();
        $('.crt-rainbows-eye2').hide();
+       $( ".pink-background" ).removeClass( "pink-background" ).addClass( "pink-background-active" );
      }
     });
 
@@ -43,8 +47,8 @@ export default class App extends Component {
       tl.play();
     }
 
-    rotate($flower1,1000000,3600000);
-    rotate($flower2,1000000,3600000);
+    rotate($flower1,500000,3600000);
+    rotate($flower2,500000,3600000);
   }
 
   render() {
