@@ -34,7 +34,6 @@ export default class BandText extends Component {
         // $bandText.css({'bottom' : specialHeight});
       })
 
-      setTimeout(function(){ $(window).resize(); }, 1);
     }
 
     render() {

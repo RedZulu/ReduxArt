@@ -163,30 +163,30 @@
 /*-------------ScrollDown---------------*/
 @-webkit-keyframes scrollDown{
   100%{
-    background-position:0px 3000px;
+    background-position:0px 4000px;
   }
 }
 
 @-moz-keyframes scrollDown{
   100%{
-    background-position:0px 3000px;
+    background-position:0px 4000px;
   }
 }
 
 @-o-keyframes scrollDown{
   100%{
-    background-position:0px 3000px;
+    background-position:0px 4000px;
   }
 }
 
 @-ms-keyframes scrollDown{
   100%{
-    background-position:0px 3000px;
+    background-position:0px 4000px;
   }
 }
 
 @keyframes scrollDown{
   100%{
-    background-position:0px 3000px;
+    background-position:0px 4000px;
   }
 }

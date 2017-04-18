@@ -10,7 +10,7 @@ export default class Background extends Component {
 
     render() {
         return (
-          <div className="pink-background scrollUp"></div>
+          <div className="pink-background"></div>
         );
     }
 }

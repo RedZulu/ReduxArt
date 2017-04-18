@@ -12,6 +12,17 @@ export default class App extends Component {
     let space = false;
     let executed = false;
 
+    let height = 2550, //assumes your image is 2550px wide
+    speed = 60, //pixels per second
+    duration = height / speed,
+    endPosition = height - (speed / 60); //adjust the end position assuming 60fps
+    let moveBackground = TweenMax.to($(".pink-background"), duration, {
+      css:{backgroundPosition: '0 -' + endPosition + "px"},
+      repeat:-1,
+      ease:Linear.easeNone
+    });
+    let tweenTime = moveBackground.timeScale();
+
     $(document).keyup(function(evt) {
       if (evt.keyCode == 32) {
        space = false;
@@ -23,7 +34,10 @@ export default class App extends Component {
        $('.crt-flashes-eye2').hide();
        $('.crt-rainbows-eye2').show();
        rotate($flower2,500000,-3600000);
-       $( ".pink-background" ).removeClass( "scrollDown" ).addClass( "scrollUp" );
+
+       moveBackground.updateTo({css:{backgroundPosition: '0 -' + endPosition + "px"}}, false);
+       moveBackground.timeScale(tweenTime);
+
       }
     }).keydown(function(evt) {
      if (evt.keyCode == 32) {
@@ -40,7 +54,9 @@ export default class App extends Component {
        $('.crt-rainbows-eye1').show();
        $('.crt-flashes-eye2').show();
        $('.crt-rainbows-eye2').hide();
-       $( ".pink-background" ).removeClass( "scrollUp" ).addClass( "scrollDown" );
+
+       moveBackground.updateTo({css:{backgroundPosition: '0 ' + endPosition + "px"}}, false);
+       moveBackground.timeScale(2.6);
      }
     });
 
@@ -58,14 +74,16 @@ export default class App extends Component {
     rotate($flower2,500000,-3600000);
 
     function fadeIn(){
-      return $('.audio-player').animate({volume: 1}, 1000);
+      return $('.audio-player').animate({volume: 1}, 500);
     }
 
     function fadeOut(){
-      return $('.audio-player').animate({volume: 0}, 1000, function () {
+      return $('.audio-player').animate({volume: 0}, 500, function () {
         $('.audio-player').trigger('pause');
      });
     }
+
+    setTimeout(function(){ $(window).resize(); }, 1);
   }
 
   render() {
