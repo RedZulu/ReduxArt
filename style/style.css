@@ -22,22 +22,6 @@
   background-image: url("../assets/pink_background.png");
 }
 
-.scrollUp{
-  -webkit-animation:100s scroll infinite linear;
-   -moz-animation:100s scroll infinite linear;
-   -o-animation:100s scroll infinite linear;
-   -ms-animation:100s scroll infinite linear;
-   animation:100s scroll infinite linear;
-}
-
-.scrollDown{
-  -webkit-animation:10s scrollDown infinite linear;
-   -moz-animation:10s scrollDown infinite linear;
-   -o-animation:10s scrollDown infinite linear;
-   -ms-animation:10s scrollDown infinite linear;
-   animation:10s scrollDown infinite linear;
-}
-
 .eyes{
   display: flex;
   width: 100%;
@@ -127,66 +111,4 @@
 
 .bandText2{
   position: absolute;
-}
-
-/*-------------ScrollUp---------------*/
-@-webkit-keyframes scroll{
-  100%{
-    background-position:0px -3000px;
-  }
-}
-
-@-moz-keyframes scroll{
-  100%{
-    background-position:0px -3000px;
-  }
-}
-
-@-o-keyframes scroll{
-  100%{
-    background-position:0px -3000px;
-  }
-}
-
-@-ms-keyframes scroll{
-  100%{
-    background-position:0px -3000px;
-  }
-}
-
-@keyframes scroll{
-  100%{
-    background-position:0px -3000px;
-  }
-}
-
-/*-------------ScrollDown---------------*/
-@-webkit-keyframes scrollDown{
-  100%{
-    background-position:0px 4000px;
-  }
-}
-
-@-moz-keyframes scrollDown{
-  100%{
-    background-position:0px 4000px;
-  }
-}
-
-@-o-keyframes scrollDown{
-  100%{
-    background-position:0px 4000px;
-  }
-}
-
-@-ms-keyframes scrollDown{
-  100%{
-    background-position:0px 4000px;
-  }
-}
-
-@keyframes scrollDown{
-  100%{
-    background-position:0px 4000px;
-  }
 }
