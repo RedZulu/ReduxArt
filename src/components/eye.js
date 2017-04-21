@@ -11,10 +11,14 @@ export default class Eye extends Component {
     render() {
         return (
           <div className="eyes">
-            <img className="crt-flashes-eye1" src="../../assets/flashes.gif" />
-            <img className="crt-rainbows-eye1" src="../../assets/rainbows.gif" />
-            <img className="crt-flashes-eye2" src="../../assets/flashes.gif" />
-            <img className="crt-rainbows-eye2" src="../../assets/rainbows.gif" />
+            <div className="eye1">
+              <img className="crt-flashes-eye1" src="../../assets/flashes.gif" />
+              <img className="crt-rainbows-eye1" src="../../assets/rainbows.gif" />
+            </div>
+            <div className="eye2">
+              <img className="crt-flashes-eye2" src="../../assets/flashes.gif" />
+              <img className="crt-rainbows-eye2" src="../../assets/rainbows.gif" />
+            </div>
           </div>
         );
     }

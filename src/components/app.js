@@ -21,7 +21,6 @@ export default class App extends Component {
       repeat:-1,
       ease:Linear.easeNone
     });
-    let tweenTime = moveBackground.timeScale();
 
     $(document).keyup(function(evt) {
       if (evt.keyCode == 32) {
@@ -36,7 +35,7 @@ export default class App extends Component {
        rotate($flower2,500000,-3600000);
 
        moveBackground.updateTo({css:{backgroundPosition: '0 -' + endPosition + "px"}}, false);
-       moveBackground.timeScale(tweenTime);
+       moveBackground.timeScale(0.25);
 
       }
     }).keydown(function(evt) {
@@ -56,7 +55,7 @@ export default class App extends Component {
        $('.crt-rainbows-eye2').hide();
 
        moveBackground.updateTo({css:{backgroundPosition: '0 ' + endPosition + "px"}}, false);
-       moveBackground.timeScale(2.6);
+       moveBackground.timeScale(4);
      }
     });
 
@@ -66,7 +65,7 @@ export default class App extends Component {
 
     function rotate(x, timespan, degrees){
       let tl = new TimelineMax();
-      tl.to(x,  timespan, {rotation:degrees, repeat:-1})
+      tl.to(x,  timespan, {rotation:degrees, repeat:-1});
       tl.play();
     }
 
@@ -84,6 +83,7 @@ export default class App extends Component {
     }
 
     setTimeout(function(){ $(window).resize(); }, 1);
+
   }
 
   render() {

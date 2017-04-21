@@ -5,6 +5,7 @@
   top: 0;
   overflow: hidden;
   position: absolute;
+  min-height: 550px;
 }
 
 .audio-player{
@@ -28,25 +29,41 @@
   justify-content: space-between;
   height: 180px;
   position: absolute;
-  top: 163px;
+  top: 17%;
+}
+
+.eye1{
+    height: 100%;
+    width: 15%;
+    overflow: hidden;
+}
+
+.eye2{
+    height: 100%;
+    width: 15%;
+    overflow: hidden;
 }
 
 .crt-flashes-eye1{
   height: 180px;
+  float: left;
 }
 
 .crt-flashes-eye2{
   height: 180px;
   display: none;
+  float: right;
 }
 
 .crt-rainbows-eye1{
   height: 180px;
   display: none;
+  float: left;
 }
 
 .crt-rainbows-eye2{
   height: 180px;
+  float: right;
 }
 
 .special{
@@ -62,6 +79,7 @@
   left: 0;
   z-index: 2;
   top: 0;
+  min-height: 505px;
 }
 
 .cat2{
@@ -69,6 +87,7 @@
   right: 0;
   z-index: 2;
   top: 0;
+  min-height: 505px;
 }
 
 .flowers{
@@ -85,12 +104,14 @@
   left: 6%;
   z-index: 10;
   width: 100%;
+  min-height: 180px;
 }
 
 .flower2{
   right: 3%;
   z-index: 10;
   width: 100%;
+  min-height: 180px;
 }
 
 .bandTextDiv{
@@ -102,13 +123,16 @@
   position: absolute;
   width: 100%;
   height: 100%;
+  min-height: 500px;
 }
 
 .bandText1{
   position: absolute;
   top: 0;
+  min-height: 180px;
 }
 
 .bandText2{
   position: absolute;
+  min-height: 180px;
 }
